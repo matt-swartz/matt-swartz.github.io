@@ -112,8 +112,8 @@
 
                 <!-- Newspaypr -->
                 <div id="project-2" class="relative flex flex-col md:flex-row items-center w-full">
-                    <!-- Left Side: Carousel -->
-                    <div class="w-full md:w-10/12 lg:w-8/12 p-4 flex items-center justify-center gap-x-2 md:gap-x-4">
+                     <!-- Carousel Wrapper -->
+                    <div class="w-full md:w-10/12 lg:w-10/12 p-4 flex items-center justify-center gap-x-2 md:gap-x-4">
                         <!-- Left Arrow -->
                         <button onclick="changeSlide('project-2', -1)" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none flex-shrink-0 transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
@@ -124,19 +124,21 @@
                                 <img src="assets/newspaypr_portrait-portrait.png" alt="Newspaypr Screenshot 1" class="w-full h-auto">
                             </div>
                             <div class="carousel-slide hidden">
-                                <img src="assets/newspaypr_landscape-landscape.png" alt="Newspaypr Screenshot 2" class="w-full h-auto">
+                                <img src="assets/newspaypr_landscape-landscape.png" alt="Newspaypr Screenshot 2" class="w-full h-full">
                             </div>
-                          </div>
-                      <!-- Right Arrow -->
-                      <button onclick="changeSlide('project-2', 1)" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none flex-shrink-0 transition-colors">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                      </button>
+                        </div>
+                        <!-- Right Arrow -->
+                        <button onclick="changeSlide('project-2', 1)" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none flex-shrink-0 transition-colors">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
                     </div>
-                    <!-- Right Side: Description -->
-                    <div class="w-full md:w-7/12 p-4 md:pl-8">
+
+                    <!-- Description -->
+                    <div class="w-full md:w-8/12 p-4">
                         <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-800">
                            <h3 class="text-2xl font-bold mb-2 text-black dark:text-white">Newspaypr</h3>
                            <p class="text-gray-600 dark:text-gray-300 mb-4">This app transforms your favorite RSS feeds into a beautifully designed digital newspaper, delivering the latest headlines from all your sources. Experience your news in a classic, multi-column layout, creating a personal front page that's updated in real-time.</p>
+                           <!-- Links -->
                            <div class="flex flex-wrap items-center gap-4 mt-4">
                                <div class="inline-flex items-center justify-center h-12 px-4 py-3 bg-gray-200 dark:bg-gray-800 rounded-lg text-sm font-medium text-gray-500 dark:text-gray-400 cursor-not-allowed">
                                     <span>Coming Soon to the App Store</span>
@@ -169,9 +171,6 @@
                             </div>
                             <div class="carousel-slide hidden">
                                 <img src="assets/urbword-3-portrait.png" alt="urbWord Screenshot 3" class="w-full h-auto">
-                            </div>
-                            <div class="carousel-slide hidden">
-                                <img src="assets/urbWord_web.png" alt="urbWord Screenshot 4" class="w-full h-auto">
                             </div>
                         </div>
                       <!-- Right Arrow -->
