@@ -57,6 +57,9 @@
         <p>New York, NY</p>
     </div>
 
+    <!-- Divider -->
+    <hr class="w-full max-w-7xl mx-auto border-t border-gray-200 dark:border-gray-700">
+
     <!-- Projects Section -->
     <section id="projects" class="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-black dark:text-white">Projects</h2>
@@ -68,8 +71,13 @@
                 <!-- Re/member -->
                 <div id="project-1" class="relative flex flex-col md:flex-row items-center w-full">
                     <!-- Left Side: Carousel -->
-                    <div class="w-full md:w-5/12 p-4">
-                        <div class="relative rounded-lg shadow-2xl overflow-hidden carousel-container">
+                    <div class="w-full md:w-10/12 lg:w-8/12 p-4 flex items-center justify-center gap-x-2 md:gap-x-4">
+                        <!-- Left Arrow -->
+                        <button onclick="changeSlide('project-1', -1)" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none flex-shrink-0 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        </button>
+                        <!-- Image Container -->
+                        <div class="relative rounded-lg shadow-2xl overflow-hidden carousel-container flex-grow">
                             <div class="carousel-slide">
                                 <img src="assets/remember-1-portrait.png" alt="Re/member Screenshot 1" class="w-full h-auto">
                             </div>
@@ -79,13 +87,11 @@
                             <div class="carousel-slide hidden">
                                 <img src="assets/remember-3-portrait.png" alt="Re/member Screenshot 3" class="w-full h-auto">
                             </div>
-                            <button onclick="changeSlide('project-1', -1)" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
-                                &#10094;
-                            </button>
-                            <button onclick="changeSlide('project-1', 1)" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
-                                &#10095;
-                            </button>
-                        </div>
+                          </div>
+                      <!-- Right Arrow -->
+                      <button onclick="changeSlide('project-1', 1)" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none flex-shrink-0 transition-colors">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                      </button>
                     </div>
                     <!-- Right Side: Description -->
                     <div class="w-full md:w-7/12 p-4 md:pl-8">
@@ -99,24 +105,32 @@
                     </div>
                 </div>
 
+                <!-- Small Divider between projects -->
+                <div class="w-full flex justify-center">
+                    <div class="w-1/4 h-px bg-gray-200 dark:bg-gray-700"></div>
+                </div>
+
                 <!-- Newspaypr -->
                 <div id="project-2" class="relative flex flex-col md:flex-row items-center w-full">
                     <!-- Left Side: Carousel -->
-                    <div class="w-full md:w-5/12 p-4">
-                        <div class="relative rounded-lg shadow-2xl overflow-hidden carousel-container">
+                    <div class="w-full md:w-10/12 lg:w-8/12 p-4 flex items-center justify-center gap-x-2 md:gap-x-4">
+                        <!-- Left Arrow -->
+                        <button onclick="changeSlide('project-2', -1)" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none flex-shrink-0 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        </button>
+                        <!-- Image Container -->
+                        <div class="relative rounded-lg shadow-2xl overflow-hidden carousel-container flex-grow">
                             <div class="carousel-slide">
                                 <img src="assets/newspaypr_portrait-portrait.png" alt="Newspaypr Screenshot 1" class="w-full h-auto">
                             </div>
                             <div class="carousel-slide hidden">
                                 <img src="assets/newspaypr_landscape-landscape.png" alt="Newspaypr Screenshot 2" class="w-full h-auto">
                             </div>
-                            <button onclick="changeSlide('project-2', -1)" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
-                                &#10094;
-                            </button>
-                            <button onclick="changeSlide('project-2', 1)" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
-                                &#10095;
-                            </button>
-                        </div>
+                          </div>
+                      <!-- Right Arrow -->
+                      <button onclick="changeSlide('project-2', 1)" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none flex-shrink-0 transition-colors">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                      </button>
                     </div>
                     <!-- Right Side: Description -->
                     <div class="w-full md:w-7/12 p-4 md:pl-8">
@@ -132,12 +146,22 @@
                     </div>
                 </div>
 
+                <!-- Small Divider between projects -->
+                <div class="w-full flex justify-center">
+                    <div class="w-1/4 h-px bg-gray-200 dark:bg-gray-700"></div>
+                </div>
+
                 <!-- urbWord -->
                 <div id="project-3" class="relative flex flex-col md:flex-row items-center w-full">
                     <!-- Left Side: Carousel -->
-                    <div class="w-full md:w-5/12 p-4">
-                        <div class="relative rounded-lg shadow-2xl overflow-hidden carousel-container">
-                            <div class="carousel-slide hidden">
+                    <div class="w-full md:w-10/12 lg:w-8/12 p-4 flex items-center justify-center gap-x-2 md:gap-x-4">
+                        <!-- Left Arrow -->
+                        <button onclick="changeSlide('project-3', -1)" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none flex-shrink-0 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        </button>
+                        <!-- Image Container -->
+                        <div class="relative rounded-lg shadow-2xl overflow-hidden carousel-container flex-grow">
+                            <div class="carousel-slide">
                                 <img src="assets/urbword-1-portrait.png" alt="urbWord Screenshot 1" class="w-full h-auto">
                             </div>
                             <div class="carousel-slide hidden">
@@ -149,13 +173,11 @@
                             <div class="carousel-slide hidden">
                                 <img src="assets/urbWord_web.png" alt="urbWord Screenshot 4" class="w-full h-auto">
                             </div>
-                            <button onclick="changeSlide('project-3', -1)" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
-                                &#10094;
-                            </button>
-                            <button onclick="changeSlide('project-3', 1)" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
-                                &#10095;
-                            </button>
                         </div>
+                      <!-- Right Arrow -->
+                      <button onclick="changeSlide('project-3', 1)" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none flex-shrink-0 transition-colors">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                      </button>
                     </div>
                     <!-- Right Side: Description -->
                     <div class="w-full md:w-7/12 p-4 md:pl-8">
