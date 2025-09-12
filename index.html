@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="dark"> <!-- Default to dark mode -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Swartz | iOS Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script>
+        // Tailwind CSS dark mode configuration
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-black text-gray-800 dark:text-gray-200 min-h-screen flex flex-col items-center justify-center transition-colors duration-300 py-16">
+
+    <div class="text-center p-8 max-w-4xl w-full">
+        <!-- Profile Picture
+        <img
+            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop"
+            alt="Aayush Mishra"
+            class="w-32 h-32 rounded-full mx-auto mb-6 border-2 border-gray-200 dark:border-gray-700 shadow-lg"
+            onerror="this.onerror=null;this.src='https://placehold.co/128x128/e5e7eb/374151?text=AM';"
+        >
+        -->
+
+        <!-- Name and Title -->
+        <h1 class="text-4xl md:text-5xl font-bold text-black dark:text-white">Matthew Swartz</h1>
+        <p class="text-lg md:text-xl text-gray-500 dark:text-gray-400 mt-2">iOS Software Engineer</p>
+
+        <!-- Social & Contact Links -->
+        <div class="flex flex-wrap justify-center items-center gap-4 my-8">
+            <!-- Email -->
+            <a href="mailto:matthew.swartz30@gmail.com" class="p-3 border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail text-gray-600 dark:text-gray-400"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="www.linkedin.com/in/matthewcswartz" target="_blank" rel="noopener noreferrer" class="p-3 border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin text-gray-600 dark:text-gray-400"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" class="p-3 border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle theme">
+                <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun text-gray-600 dark:text-gray-400 hidden dark:block"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon text-gray-600 dark:text-gray-400 block dark:hidden"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+
+        <!-- Location -->
+        <p>New York, NY</p>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-black dark:text-white">Projects</h2>
+
+        <div class="relative">
+            <!-- Timeline Content -->
+            <div class="space-y-16">
+
+                <!-- Re/member -->
+                <div id="project-1" class="relative flex flex-col md:flex-row items-center w-full">
+                    <!-- Left Side: Carousel -->
+                    <div class="w-full md:w-5/12 p-4">
+                        <div class="relative rounded-lg shadow-2xl overflow-hidden carousel-container">
+                            <div class="carousel-slide">
+                                <img src="assets/remember-1-portrait.png" alt="Re/member Screenshot 1" class="w-full h-auto">
+                            </div>
+                            <div class="carousel-slide hidden">
+                                <img src="assets/remember-2-portrait.png" alt="Re/member Screenshot 2" class="w-full h-auto">
+                            </div>
+                            <div class="carousel-slide hidden">
+                                <img src="assets/remember-3-portrait.png" alt="Re/member Screenshot 3" class="w-full h-auto">
+                            </div>
+                            <button onclick="changeSlide('project-1', -1)" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+                                &#10094;
+                            </button>
+                            <button onclick="changeSlide('project-1', 1)" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+                                &#10095;
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Right Side: Description -->
+                    <div class="w-full md:w-7/12 p-4 md:pl-8">
+                        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-800">
+                           <h3 class="text-2xl font-bold mb-2 text-black dark:text-white">Re/member</h3>
+                           <p class="text-gray-600 dark:text-gray-300 mb-4">This app helps you to capture and categorize your most important thoughts, from fleeting ideas to useful facts. By shuffling through your collection of knowledge, you can actively reinforce your memory and ensure that your valuable insights are never forgotten.</p>
+                           <a href="https://apps.apple.com/us/app/re-member/id6746369488" target="_blank" rel="noopener noreferrer" class="inline-block">
+                               <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="h-12">
+                           </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newspaypr -->
+                <div id="project-2" class="relative flex flex-col md:flex-row items-center w-full">
+                    <!-- Left Side: Carousel -->
+                    <div class="w-full md:w-5/12 p-4">
+                        <div class="relative rounded-lg shadow-2xl overflow-hidden carousel-container">
+                            <div class="carousel-slide">
+                                <img src="assets/newspaypr_portrait-portrait.png" alt="Newspaypr Screenshot 1" class="w-full h-auto">
+                            </div>
+                            <div class="carousel-slide hidden">
+                                <img src="assets/newspaypr_landscape-landscape.png" alt="Newspaypr Screenshot 2" class="w-full h-auto">
+                            </div>
+                            <button onclick="changeSlide('project-2', -1)" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+                                &#10094;
+                            </button>
+                            <button onclick="changeSlide('project-2', 1)" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+                                &#10095;
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Right Side: Description -->
+                    <div class="w-full md:w-7/12 p-4 md:pl-8">
+                        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-800">
+                           <h3 class="text-2xl font-bold mb-2 text-black dark:text-white">Newspaypr</h3>
+                           <p class="text-gray-600 dark:text-gray-300 mb-4">This app transforms your favorite RSS feeds into a beautifully designed digital newspaper, delivering the latest headlines from all your sources. Experience your news in a classic, multi-column layout, creating a personal front page that's updated in real-time.</p>
+                           <div class="flex flex-wrap items-center gap-4 mt-4">
+                               <div class="inline-flex items-center justify-center h-12 px-4 py-3 bg-gray-200 dark:bg-gray-800 rounded-lg text-sm font-medium text-gray-500 dark:text-gray-400 cursor-not-allowed">
+                                    <span>Coming Soon to the App Store</span>
+                               </div>
+                               <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                                    <span>Visit Website</span>
+                               </a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- urbWord -->
+                <div id="project-3" class="relative flex flex-col md:flex-row items-center w-full">
+                    <!-- Left Side: Carousel -->
+                    <div class="w-full md:w-5/12 p-4">
+                        <div class="relative rounded-lg shadow-2xl overflow-hidden carousel-container">
+                            <div class="carousel-slide">
+                                <img src="assets/newspaypr_portrait-portrait.png" alt="Newspaypr Screenshot 1" class="w-full h-auto">
+                            </div>
+                            <div class="carousel-slide hidden">
+                                <img src="assets/newspaypr_landscape-landscape.png" alt="Newspaypr Screenshot 2" class="w-full h-auto">
+                            </div>
+                            <div class="carousel-slide hidden">
+                                <img src="assets/newspaypr_iPhone-portrait.png" alt="Newspaypr Screenshot 3" class="w-full h-auto">
+                            </div>
+                            <button onclick="changeSlide('project-2', -1)" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+                                &#10094;
+                            </button>
+                            <button onclick="changeSlide('project-2', 1)" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+                                &#10095;
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Right Side: Description -->
+                    <div class="w-full md:w-7/12 p-4 md:pl-8">
+                        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-800">
+                           <h3 class="text-2xl font-bold mb-2 text-black dark:text-white">urbWord</h3>
+                           <p class="text-gray-600 dark:text-gray-300 mb-4">A fun twist on the popular word game! Guess the latest slang words daily on our app and website.</p>
+                           <div class="flex flex-wrap items-center gap-4 mt-4">
+                               <div class="inline-flex items-center justify-center h-12 px-4 py-3 bg-gray-200 dark:bg-gray-800 rounded-lg text-sm font-medium text-gray-500 dark:text-gray-400 cursor-not-allowed">
+                                    <span>Coming Soon to the App Store</span>
+                               </div>
+                               <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                                    <span>Visit Website</span>
+                               </a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+  </section>
+
+  <script>
+      const themeToggle = document.getElementById('theme-toggle');
+      const sunIcon = document.getElementById('theme-icon-sun');
+      const moonIcon = document.getElementById('theme-icon-moon');
+      const htmlElement = document.documentElement;
+
+      // Function to apply theme based on localStorage or system preference
+      function applyTheme() {
+          if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+              htmlElement.classList.add('dark');
+          } else {
+              htmlElement.classList.remove('dark');
+          }
+      }
+
+      // Initial theme application
+      applyTheme();
+
+      // Event listener for the toggle button
+      themeToggle.addEventListener('click', () => {
+          htmlElement.classList.toggle('dark');
+
+          // Update localStorage
+          if (htmlElement.classList.contains('dark')) {
+              localStorage.theme = 'dark';
+          } else {
+              localStorage.theme = 'light';
+          }
+      });
+
+      // Optional: Listen for system theme changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!('theme' in localStorage)) {
+               applyTheme();
+          }
+      });
+
+      // --- Carousel Logic ---
+      const carousels = {};
+
+      function setupCarousels() {
+          document.querySelectorAll('.carousel-container').forEach(container => {
+              const projectId = container.closest('[id^="project-"]').id;
+              carousels[projectId] = {
+                  slides: container.querySelectorAll('.carousel-slide'),
+                  currentIndex: 0
+              };
+              showSlide(projectId, 0);
+          });
+      }
+
+      function showSlide(projectId, index) {
+          const carousel = carousels[projectId];
+          if (!carousel) return;
+
+          carousel.slides.forEach((slide, i) => {
+              slide.classList.toggle('hidden', i !== index);
+          });
+          carousel.currentIndex = index;
+      }
+
+      function changeSlide(projectId, direction) {
+          const carousel = carousels[projectId];
+          if (!carousel) return;
+
+          let newIndex = carousel.currentIndex + direction;
+          if (newIndex >= carousel.slides.length) {
+              newIndex = 0;
+          } else if (newIndex < 0) {
+              newIndex = carousel.slides.length - 1;
+          }
+          showSlide(projectId, newIndex);
+      }
+
+      // Initialize carousels on page load
+      document.addEventListener('DOMContentLoaded', setupCarousels);
+
+  </script>
+
+</body>
+</html>
