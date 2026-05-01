@@ -316,39 +316,6 @@
             object-fit: cover;
         }
 
-        .hero-metrics {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 1px;
-            overflow: hidden;
-            margin-top: -1px;
-            border: 1px solid var(--line);
-            border-radius: 0 0 var(--radius) var(--radius);
-            background: var(--line);
-        }
-
-        .metric {
-            padding: 1rem;
-            background: color-mix(in srgb, var(--surface) 92%, transparent);
-        }
-
-        .metric strong,
-        .metric span {
-            display: block;
-        }
-
-        .metric strong {
-            font-size: clamp(1.5rem, 3vw, 2rem);
-            line-height: 1;
-        }
-
-        .metric span {
-            margin-top: 0.35rem;
-            color: var(--muted);
-            font-size: 0.82rem;
-            font-weight: 700;
-        }
-
         .section {
             padding: clamp(4rem, 8vw, 7rem) 0;
         }
@@ -687,10 +654,6 @@
                 width: 100%;
             }
 
-            .hero-metrics {
-                grid-template-columns: 1fr;
-            }
-
             .project {
                 padding: 0.7rem;
             }
@@ -794,20 +757,6 @@
             <aside class="hero-panel" aria-label="Portfolio summary">
                 <div class="portrait-stack">
                     <img src="assets/profilepic.png" alt="Matthew Swartz">
-                </div>
-                <div class="hero-metrics" aria-label="Quick facts">
-                    <div class="metric">
-                        <strong>3</strong>
-                        <span>Products featured</span>
-                    </div>
-                    <div class="metric">
-                        <strong>2</strong>
-                        <span>App Store releases</span>
-                    </div>
-                    <div class="metric">
-                        <strong>NYC</strong>
-                        <span>Based</span>
-                    </div>
                 </div>
             </aside>
         </section>
@@ -956,10 +905,10 @@
                 <p>
                     The best way to reach me is email. I'm always happy to hear thoughts on the apps or chat about iOS projects.
                 </p>
-                <a class="email-address" id="contact-email" href="mailto:matthew.swartz30@gmail.com">matthew.swartz30@gmail.com</a>
+                <a class="email-address" id="contact-email" href="mailto:mattcswartz@gmail.com">mattcswartz@gmail.com</a>
                 <div class="hero-actions">
-                    <a class="button primary" href="mailto:matthew.swartz30@gmail.com">Open email app</a>
-                    <button class="button" type="button" data-copy-email="matthew.swartz30@gmail.com" aria-describedby="copy-status">Copy email</button>
+                    <a class="button primary" href="mailto:mattcswartz@gmail.com">Open email app</a>
+                    <button class="button" type="button" data-copy-email="mattcswartz@gmail.com" aria-describedby="copy-status">Copy email</button>
                 </div>
                 <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
             </div>
@@ -969,7 +918,7 @@
     <footer class="footer">
         <div class="site-shell footer-inner">
             <span>Matthew Swartz, iOS Software Engineer in New York.</span>
-            <a href="#contact">matthew.swartz30@gmail.com</a>
+            <a href="#contact">mattcswartz@gmail.com</a>
         </div>
     </footer>
 
